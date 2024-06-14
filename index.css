@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+.translator-container {
+    width: 80%;
+    max-width: 800px;
+}
+
+.input-output-container {
+    display: flex;
+    justify-content: space-between; /* Espaço igual entre os elementos */
+    margin-bottom: 20px; /* Espaço abaixo do container */
+}
+
+.input-container, .output-container {
+    flex: 1; /* Distribui igualmente o espaço entre os containers */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.input-container {
+    margin-right: 10px; /* Espaçamento entre o input e o output */
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-container textarea {
+    width: 100%; /* Ocupa 100% da largura do container */
+    height: calc(100% - 20px); /* Calcula a altura do textarea considerando o padding */
+    padding: 10px;
+    margin: 0; /* Remove margem padrão */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none; /* Impede o redimensionamento */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+}
+
+.output-container {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto */
+    justify-content: center; /* Centraliza horizontalmente o texto */
+}
+
+#outputText {
+    margin: 0;
+    padding: 10px;
+}
+
+#submitButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submitButton:hover {
+    background-color: #45a049;
+}
+
+#EarthIcon {
+    width: 2vw; /* Tamanho do ícone em relação à largura da viewport */
+    height: auto;
+    margin-right: 10px; /* Espaço entre o ícone e o texto no footer */
+}
+
+footer {
+    background-color: #ccc; /* Fundo cinza */
+    text-align: center;
+    padding: 0.5em; /* Reduzindo o espaçamento interno */
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+}
+
+.footer-icon {
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+@media (max-width: 800px) {
+    .input-output-container {
+        flex-direction: column; /* Empilhar os containers em telas menores */
+    }
+
+    .input-container, .output-container {
+        width: 100%; /* Largura total em telas menores */
+        margin-bottom: 10px; /* Espaço entre os containers em telas menores */
+    }
+}

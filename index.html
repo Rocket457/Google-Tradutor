@@ -1,44 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>\
+    <title>Página de Exemplo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
 <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <div class="main-login">
-        <div class="left-side" style="background-color: #7A0BC0;" >
-            <img class="imagem" src="images/Picture SignUp.jpeg">
-
-        </div>
-        <div class="right-login">
-        
-            <h1 class="titulo" style="margin-top: 12px">Login</h1>
-            <div class="textfield">
-                <label for="user" style="font-weight: 500; font-size: 20px; margin-left: 10%; margin-bottom: 5%; letter-spacing: 1px;">Username</label>
-                <input type="text" name="user" placeholder="exemplo@email.com"><br><br>
-
-                <label for="password" style="font-weight: 500; font-size: 20px; margin-left: 10%; letter-spacing: 1px;" >Password</label><br><br>
-                <input type="password" name="password" placeholder="&#10033;&#10033;&#10033;&#10033;&#10033;&#10033;&#10033;&#10033;">
-                <p class="conectado"><img class="checkbox"src="images/checkbox.png"><span class="contentspan">Permanecer conectado</span><a class="esqueceu"href="Registrarse.html">Esqueceu a senha?</a></p><br> 
-
-                <button class="btn-login" style="margin-top: 7%">Login</button>
-                <p class="naotemconta">Não tem uma conta ? <a style="letter-spacing: 1px;"href="Registrarse.html">Registrar-se</a></p>
-                <p class="singinwith" style="margin-top: 20px"> --- OR ---</p>
-                <p class="singinwith" > Faça o login com</p>
-                <div class="redessociais">
-                <img class="google" src="images/redes.svg" style="margin-left: 45px">
-                
+    <header>
+        <h1>Bem-vindo ao mais novo GOOGLE TRADUTOR 2.0</h1>
+    </header>
+    <main>
+        <div class="translator-container">
+            <div class="input-output-container">
+                <div class="input-container">
+                    <label for="userInput">Digite algo:</label>
+                    <textarea id="userInput" rows="5" placeholder="Digite o texto para traduzir..."></textarea>
+                </div>
+                <div class="output-container">
+                    <p id="outputText">A tradução será exibida aqui.</p>
                 </div>
             </div>
+            <div class="select-container">
+                <label for="languageSelect">Selecione o idioma:</label>
+                <select id="languageSelect">
+                    <option value="yoda">Yoda</option>
+                    <option value="pirate">Pirate</option>
+                    <option value="valspeak">Valspeak</option>
+                    <option value="minion">Minion</option>
+                    <option value="ferb-latin">Ferb-latin</option>
+                    <option value="pig-latin">Pig-latin</option>
+                    <option value="dothraki">Dothraki</option>
+                    <option value="valyrian">Valyrian</option>
+                    <option value="hodor">Hodor</option>
+                    <option value="sindarin">Sindarin</option>
+                    <option value="quenya">Quenya</option>
+                    <option value="orcish">Orcish</option>
+                    <option value="sith">Sith</option>
+                    <option value="cheunh">Cheunh</option>
+                    <option value="gungan">Gungan</option>
+                    <option value="mandalorian">Mandalorian</option>
+                    <option value="huttese">Huttese</option>
+                    <option value="chef">Chef</option>
+                    <option value="catalan">Catalan</option>
+                    <option value="oldenglish">Oldenglish</option>
+                    <option value="shakespeare">Shakespeare</option>
+                    <option value="vulcan">Vulcan</option>
+                    <option value="klingon">Klingon</option>
+                    <option value="romulan">Romulan</option>
+                    <option value="dovahzul">Dovahzul</option>
+                    <option value="thuum">Thuum</option>
+                    <option value="aldmeris">Aldmeris</option>
+                    <option value="groot">Groot</option>
+                    <option value="jive">Jive</option>
+                    <option value="ebonics">Ebonics</option>
+                    <option value="dolan">Dolan</option>
+                    <option value="fudd">Fudd</option>
+                    <option value="kraut">Kraut</option>
+                    <option value="wow">Wow</option>
+                    <option value="cockney">Cockney</option>
+                    <option value="norfolk">Norfolk</option>
+                    <option value="morse">Morse</option>
+                    <option value="us2uk">Us2uk</option>
+                    <option value="uk2us">Uk2us</option>
+                    <option value="leetspeak">Leetspeak</option>
+                    <option value="brooklyn">Brooklyn</option>
+                    <option value="ermahgerd">Ermahgerd</option>
+                    <option value="australian">Australian</option>
+                    <option value="boston">Boston</option>
+                    <option value="austrian">Austrian</option>
+                    <option value="article_rewrite">Article rewrite</option>
+                    <option value="braille">Braille</option>
+                    <option value="numbers">Numbers</option>
+                    <option value="emoji">Emoji</option>
+                    <option value="doge">Doge</option>
+                    <option value="navi">Navi</option>
+                    <option value="southern-accent">Southern-accent</option>
+                    <option value="ubbi-dubbi">Ubbi-dubbi</option>
+                    <option value="inflationary-english">Inflationary-english</option>
+                    <option value="george-bush-dubya">George-bush-dubya</option>
+                    <option value="post-modern">Post-modern</option>
+                    <option value="ayleidoon">Ayleidoon</option>
+                    <option value="redneck">Redneck</option>
+                    <option value="roman-numerals">Roman-numerals</option>
+                    <option value="asian-accent">Asian-accent</option>
+                    <option value="russian-accent">Russian-accent</option>
+                    <option value="english-contraction">English-contraction</option>
+                    <option value="irish">Irish</option>
+                    <option value="british">British</option>
+                    <option value="german-accent">German-accent</option>
+                    <option value="draconic">Draconic</option>
+                    <option value="enderman">Enderman</option>
+                    <option value="wheel-of-time-old-tongue">Wheel-of-time-old-tongue</option>
+                </select>
+            </div>
+            <button id="translateButton">Traduzir</button> <!-- Botão de traduzir -->
         </div>
-    </div>
+    </main>
+    <footer>
+        <p><img id="EarthIcon" src="earth-americas-solid.svg" alt="Earth Icon" class="footer-icon">O Melhor Tradutor de <strong>TODOS</strong> os tempos!!!</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html> 
