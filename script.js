@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Atualizar o texto de saída com a tradução
             outputText.textContent = translatedText;
         } catch (error) {
+            if (error.code === 429){
+                console.error('tenta dnv depois seu bosta', error.message);
+                outputText.textContent = 'Erro ao traduzir. Por favor, tente novamente mais tarde.'+ error.message;
+            }
             console.error('Erro ao traduzir texto:', error);
             outputText.textContent = 'Erro ao traduzir. Por favor, tente novamente mais tarde.';
         }
